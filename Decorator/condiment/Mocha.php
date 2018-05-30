@@ -5,6 +5,7 @@ class Mocha extends \CondimentDecorator{
 	//记录被装饰者(饮料)
 	private $beverage;
 	function __construct(\Beverage $beverage){
+		var_dump($beverage->cost());
 		$this->beverage=$beverage;
 	}
 	//获取被装饰者(饮料)的描述
