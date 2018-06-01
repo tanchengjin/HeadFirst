@@ -18,19 +18,22 @@ class CeilingFan{
     //吊扇高转速
     public function high(){
         $this->speed=self::$HIGH;
-        echo '设置了高转速';
+        echo '吊扇高速模式<br>';
     }
     //设置中转速
     public function medium(){
         $this->speed=self::$MEDIUM;
+        echo '吊扇中转速<br>';
     }
     //吊扇低速
     public function low(){
         $this->speed=self::$LOW;
+        echo '吊扇低转速<br>';
     }
     //关闭吊扇
     public function off(){
         $this->speed=self::$OFF;
+        echo '吊扇关闭<br>';
     }
     //获得吊扇现在转速
     public function getSpeed(){

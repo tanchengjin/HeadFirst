@@ -10,7 +10,7 @@ class CeilingFanMediumCommand implements \Command{
 
     public function execute()
     {
-        $this->prev_speed->$this->ceiling_fan->getSpeed();
+        $this->prev_speed=$this->ceiling_fan->getSpeed();
         $this->ceiling_fan->medium();
     }
     public function undo()

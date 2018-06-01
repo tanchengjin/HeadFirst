@@ -59,7 +59,8 @@ class RemoteControl{
         $string_buffer='\n-------------------Remote Control-----------\n<br>';
         for ($i=0;$i<$this->onCommands.length;$i++)
             $string_buffer+="[slot ".$i." ]".$this->onCommands[$i]->getClass()->getName().''.$this->offCommands[$i]->getClass()->getName().'<br>';
-        return $string_buffer;
+        echo $string_buffer;
+//        return $string_buffer;
     }
 
 }
